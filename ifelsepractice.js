@@ -1,3 +1,5 @@
+//Write a function that takes a single string parameter called action
+//If the value passed into our function is eat have the function return the string value eat tacos
 function youGetTaco (action) {
 	if (action === "eat") {
 		return "Eat Tacos";
@@ -5,11 +7,13 @@ function youGetTaco (action) {
 }
 var myAction = "eat";
 console.log('youGetTaco', myAction, youGetTaco(myAction));
-// youGetTaco eat Eat Tacos
+// --> youGetTaco eat Eat Tacos
 var myOtherAction = "drink";
 console.log('youGetTaco', myOtherAction, youGetTaco(myOtherAction));
-//youGetTaco drink undefined 
+// -- > youGetTaco drink undefined 
 
+//Write a function that takes two variables of type number called first and second respectively. 
+//Reaturn true if the first number is greater than the second 
 function isNumberGreaterThan (first, second) {
 	if (first > second) {
 		return true;
@@ -21,6 +25,7 @@ function isNumberGreaterThan (first, second) {
 console.log(isNumberGreaterThan(1,2));
 console.log(isNumberGreaterThan(2,1));
 
+//Write a functiont that takes in a Boolean value named val and have the function return whether the value is true  
 //boolean 
 function ifFalse (val){ 
 	if (val === false) {
@@ -29,6 +34,8 @@ function ifFalse (val){
 }
 console.log(ifFalse(false));
 
+//Write a function that takes two variable of type string called firstWord and secondWord respectively
+//Return 'AWWWWRIGHT' if the two are euqal otherwise return 'Y U NO MATCH!'
 function isEqual (firstWord, secondWord) {
 	if (firstWord === secondWord) {
 		return "AWWWWRIGHT";
@@ -40,17 +47,21 @@ function isEqual (firstWord, secondWord) {
 console.log(isEqual("First", "Second"));
 console.log(isEqual ("First","First"));
 
+//Write a function that takes two variables of type string called firstWord and secondWord respectively
+//Return 'AWWWWRIGHT' if the two are not equal otherwise return 'Y U MATCH!'
 function isNotEqual (firstWord, secondWord) {
 	if (firstWord !== secondWord) {
 		return "AWWWWRIGHT";
 	}
 	else {
-		return "Y U NO MATCH!";
+		return "Y U MATCH!";
 	}
 }
 console.log(isNotEqual("First","Second"));
 console.log(isNotEqual("First", "First"));
 
+//Write a function that takes two variables of type Boolean called first and second respectively
+//Return true if both values are true otherwise return false
 function doubleEquals (first, second) {
 	if (first == second) {
 		return true;
@@ -62,6 +73,8 @@ function doubleEquals (first, second) {
 console.log (doubleEquals(true, true));
 console.log (doubleEquals(false,true));
 
+//Write a function that takes three variables of type Number called first and second and third respectively
+//Return true if the sum of all values are greater than 30 otherwise return false
 function totalOver30 (first, second, third) {
 	if (first + second + third > 30) {
 		return true;
@@ -73,6 +86,8 @@ function totalOver30 (first, second, third) {
 console.log (totalOver30(10,10,11));
 console.log(totalOver30(1,2,3));
 
+//Write a function that takes four variables of type Number called first and second and third and fourth respectively
+//Return true if the sum of the first, second, and third are less than fourth otherwise return false
 function totalUnderWhat (first, second, third, fourth) {
 	if ((first + second + third) < fourth) {
 		return true;
@@ -84,6 +99,8 @@ function totalUnderWhat (first, second, third, fourth) {
 console.log (totalUnderWhat(1,2,3,4));
 console.log (totalUnderWhat(1,2,3,7));
 
+//Write a function that takes in a Number value named limit
+//Have the function write a for loop that loops for each number ov elements in the Array and console.log each character as the loop executes
 function loopToNumber (limit) {
 	for (var i=0; i<=limit; i++){
 		console.log(i);
@@ -157,7 +174,7 @@ function greatSummator (numbers) {
 	var sum = 0;
 	for (var i = 0; i < numbers.length; i++){
 		var ithnumber = numbers[i];
-		//sum = sum + 3/shorthand for sum is sum += ...
+//sum = sum + 3/shorthand for sum is sum += ...
 		sum += ithnumber;
 	}
 	return sum;
@@ -169,6 +186,15 @@ console.log(greatSummator([1,2,3]));
 //var a = ++i (the value that gets sent to a is what happens after you increment i)
 //var b = i++ (the value that gets sent to b is what happens before you incremet i)
 //This assignment is very inexplicit - it can get confusing --> more often than not, you should assign a value
+
+//Write a function that takes an Array with any number of type Number and second variable called total
+//Return true if the sum of all values in the Array are less than total otherwise return false 
+
+
+//Write a function that takes an Array with any number of type Boolean values
+//Write a for loop to call our isTrue function with each value as input 
+//Return true if all values return true from our isTrue function 
+
 
 
 
