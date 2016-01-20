@@ -46,7 +46,7 @@
       document.createElement('span');
 
     var myComputerLovesText = 
-      document.createTextNode('Loves Ice Cream!');
+      document.createTextNode('survived the ice cream attack!');
 
     myComputerLovesElem.id = 'myComputerLoves';
       myComputerLovesElem.appendChild(myComputerLovesText);
@@ -54,7 +54,7 @@
     var yourNameElem = document.getElementById('yourName');
     yourNameElem.appendChild(myComputerLovesElem);
 
-    console.log('loves added');
+    console.log('Compy Jr. Forever!');
 
   }
 
@@ -64,7 +64,7 @@ function oldComputerDied () {
     document.createElement('span');
 
   var myOldComputerDiedText = 
-    document.createTextNode('sadly lost the battle to iced coffee');
+    document.createTextNode('sadly lost the battle to iced coffee ;____ ;');
 
   myOldComputerDiedElem.id = 'oldComputerDied';
     myOldComputerDiedElem.appendChild(myOldComputerDiedText);
