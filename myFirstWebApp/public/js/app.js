@@ -40,26 +40,42 @@
     */
   }
 
-  function imaginaryFriendLoves () {
+  function myComputerLoves () {
 
-    var imaginaryLovesElem = 
+    var myComputerLovesElem = 
       document.createElement('span');
 
-    var imaginaryLovesText = 
-      document.createTextNode('Loves Ice Cream');
+    var myComputerLovesText = 
+      document.createTextNode('Loves Ice Cream!');
 
-    imaginaryLovesElem.id = 'imaginaryLoves';
-    imaginaryLovesElem.appendChild(imaginaryLovesText);
+    myComputerLovesElem.id = 'myComputerLoves';
+      myComputerLovesElem.appendChild(myComputerLovesText);
 
     var yourNameElem = document.getElementById('yourName');
-    yourNameElem.appendChild(imaginaryLovesElem);
+    yourNameElem.appendChild(myComputerLovesElem);
 
     console.log('loves added');
 
-
-
   }
-  
+
+function oldComputerDied () {
+
+  var myOldComputerDiedElem = 
+    document.createElement('span');
+
+  var myOldComputerDiedText = 
+    document.createTextNode('sadly lost the battle to iced coffee');
+
+  myOldComputerDiedElem.id = 'oldComputerDied';
+    myOldComputerDiedElem.appendChild(myOldComputerDiedText);
+
+  var oldComputerElem = document.getElementById('oldComputer');
+  oldComputerElem.appendChild(myOldComputerDiedElem);
+
+  console.log('RIP Compy Sr.');
+
+}
+
 //};
 
 /*
